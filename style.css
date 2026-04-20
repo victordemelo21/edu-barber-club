@@ -267,3 +267,29 @@ section {
     padding: 22px;
   }
 }
+
+.contact-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.contact-btn:hover::after {
+  left: 125%;
+  transition: 0.6s;
+}
