@@ -142,13 +142,13 @@ section {
 .services-section,
 .differentials,
 .reviews,
-.contact {
+.contact-section {
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .about-section,
-.contact {
+.contact-section {
   text-align: center;
 }
 
@@ -214,12 +214,20 @@ section {
   font-style: italic;
 }
 
-.contact {
+.contact-section {
+  width: 100%;
+  padding: 60px 16px;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
   background: linear-gradient(180deg, #151515, #101010);
   border: 1px solid rgba(212, 175, 55, 0.14);
   border-radius: 22px;
-  padding: 50px 20px;
-  margin-top: 30px;
+  padding: 40px 20px;
 }
 
 .contact-subtitle {
@@ -263,8 +271,8 @@ section {
 
   .services-card,
   .review-card,
-  .contact {
-    padding: 22px;
+  .contact-section {
+    padding: 12px;
   }
   @media (max-width: 600px) {
   .hero-section {
@@ -280,6 +288,31 @@ section {
     font-size: 1.05rem;
   }
 }
+}
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: auto;
+    padding: 70px 16px 50px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 10vw, 3rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+  .contact-container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-btn {
